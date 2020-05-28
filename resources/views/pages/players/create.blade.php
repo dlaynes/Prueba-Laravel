@@ -84,8 +84,8 @@
             @foreach($clubs as $club)
             <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="1"
-                    name="clubs[{{ $club->id }}]" id="club_{{ $club->id }}"
-                    @if( old('clubs[club_'.$club->id.']') ) checked @endif >
+                    name="clubs[{{ $club->id }}]" id="club{{ $club->id }}"
+                    @if( old('clubs.'.$club->id) ) checked @endif >
                 <label class="form-check-label" for="club_{{ $club->id }}">
                     {{ $club->name }}
                 </label>
