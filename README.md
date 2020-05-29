@@ -3,11 +3,13 @@
 En el archivo .env llenar APP_URL y SECRET_API_TOKEN (Clave de autenticación del servicio web remoto) antes de ejecutar los siguientes comandos en la consola:
 
 composer install
+
 php artisan key:generate
 
 También se deberán llenar las credenciales de acceso a la Base de datos correspondientes antes de ejecutar los siguientes comandos:
 
 php artisan migrate
+
 php artisan db:seed
 
 Para ver los ejemplos, acceder a la siguiente URL, según corresponda:
